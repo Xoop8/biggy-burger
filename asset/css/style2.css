@@ -20,7 +20,9 @@
 }
 
 .menu-item img {
-    max-width: 100%;
+    max-width: 90%;
+    width: 90%;
+    height: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
 }

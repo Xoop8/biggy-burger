@@ -39,12 +39,18 @@ header .logo_top {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    
+}
+.logo_header img{
+    max-width: 60%;
+    width: 60%;
 }
 header .logo_top .logo_header {
-    cursor: pointer;
+     cursor: pointer;
     transition-duration: .8s;
 }
 header .logo_top .logo_header:hover {
+   
     opacity: 50%;
     transition-duration: .8s;
 }
@@ -540,7 +546,7 @@ footer .logo_footer {
     justify-content: flex-start;
 }
 footer .logo_footer img {
-    width: 40%;
+    width: 10%;
 }
 footer .container {
     padding: 3rem 1rem;
