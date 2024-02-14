@@ -153,15 +153,15 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border {
     border-radius: 50%;
     color: white;
 }
-header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__dolar {
+header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__euro {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__dolar .dollar {
+header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__euro .euro{
     font-size: 3.5rem;
 }
-header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__dolar .cent {
+header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__euro .cent {
     font-size: 2rem;
 }
 header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
@@ -280,6 +280,9 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
     border-radius: 10px;
 }
 
+
+
+
 /*  Section 3 */
 #choose_enjoy {}
 #choose_enjoy p {
@@ -304,7 +307,7 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
 #choose_enjoy .intro > p {}
 
 #choose_enjoy .container {
-    display: flex;
+    
     width: auto;
     height: auto;
     flex-flow: row nowrap;
@@ -368,6 +371,28 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
     align-content: flex-end;
    
 }
+
+button{
+  
+    align-items: center;
+    padding: .5rem 1.5rem;
+    background-color: var(--orange);
+    color: var(--brown);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    transition-duration: .8s;
+}
+#prevButton{
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+#nextButton{
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 /* DISCOVER - Section 4 */
@@ -529,6 +554,23 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
     left: 0;
     width: 15%;
 }
+#reservation .pub {
+    position: absolute;
+    content: url("../img/pub.jpg");
+    top: 28%;
+    right: 10%;
+    width: 15%;
+    height: 55%;
+    border: 2px solid black; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+#reservation .pub2 {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
 
 
 /* Footer */
@@ -673,6 +715,12 @@ footer .bottom_container .right li a img:hover {
         width: 90%;
     }
 }
+@media screen and (max-width: 1400px) {
+  
+    #reservation .pub{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #try_today .wrap2 {
@@ -694,11 +742,14 @@ footer .bottom_container .right li a img:hover {
     footer .bottom_container .right {
         width: 30%;
     }
+    #reservation .pub{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1100px) {
 
-    header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__dolar .dollar {
+    header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__euro .euro {
         font-size: 2.5rem;
     }
 
@@ -714,6 +765,9 @@ footer .bottom_container .right li a img:hover {
         margin-top: -10px;
         font-size: .7rem;
         font-weight: 400;
+    }
+    #reservation .pub{
+        display: none;
     }
 
 }
@@ -738,10 +792,14 @@ footer .bottom_container .right li a img:hover {
         width: 100%;
         flex-wrap: wrap;
     }
+    #reservation .pub{
+        display: none;
+    }
 }
 
+
 @media screen and (max-width: 900px) {
-    #reservation .element_1, #reservation .element_2, #reservation .element_3 {
+    #reservation .element_1, #reservation .element_2, #reservation .element_3, #reservation .pub{
         display: none;
     }
 }
