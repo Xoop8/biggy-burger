@@ -1,3 +1,16 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
+    $nom = htmlspecialchars($_POST["Nom"]);
+    $date = htmlspecialchars($_POST["date"]);
+    $people = htmlspecialchars($_POST["people"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $time = htmlspecialchars($_POST["time"]);
+}
+?>
+
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -145,7 +158,7 @@
     <section id="reservation">
         <div class="wrap4">
             <h2>Reservation</h2>
-            <form action="" method="get">
+            <form action="" method="get" onsubmit="return validateForm()">
                 <div class="left">
                     <input type="text" name="Nom" id="name" placeholder="NOM">
                     <input type="date" name="date" id="date" placeholder="DATE">
@@ -154,7 +167,8 @@
                 <div class="right">
                     <input type="email" name="email" id="email" placeholder="EMAIL">
                     <input type="time" name="time" id="time" placeholder="time">
-                    <input type="checkbox">J'autorise ce site a conserver mes données personnelles transmises via ce formulaire.</input> 
+                    <input type="checkbox" name="consent" id="consent" >
+                    <label for="consent">J'autorise ce site à conserver mes données personnelles transmises via ce formulaire.</label>
                     <input type="submit" value="Trouver une table">
                 </div>
             </form>

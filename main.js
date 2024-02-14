@@ -27,3 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Affichez la première diapositive au chargement de la page
     showSlide(currentIndex);
 });
+
+function validateForm() {
+    var checkBox = document.getElementById("consent");
+    if (!checkBox.checked) {
+        alert("Veuillez accepter les termes et conditions pour continuer.");
+        return false;
+    }
+};
