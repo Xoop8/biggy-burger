@@ -15,8 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BiggyBurger</title>
     <script src="./main.js"></script>
@@ -160,13 +159,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Reservation</h2>
             <form action="" method="get" onsubmit="return validateForm()">
                 <div class="left">
-                    <input type="text" name="Nom" id="name" placeholder="NOM">
-                    <input type="date" name="date" id="date" placeholder="DATE">
-                    <input type="text" name="people" id="people" placeholder="NB PERSONNE">
+                    <input type="text" name="Nom" id="name" placeholder="NOM" required>
+                    <input type="date" name="date" id="date" placeholder="DATE"required>
+                    <input type="text" name="people" id="people" placeholder="NB PERSONNE"required>
                 </div>
                 <div class="right">
-                    <input type="email" name="email" id="email" placeholder="EMAIL">
-                    <input type="time" name="time" id="time" placeholder="time">
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                    <input type="time" name="time" id="time"required >
                     <input type="checkbox" name="consent" id="consent" >
                     <label for="consent">J'autorise ce site à conserver mes données personnelles transmises via ce formulaire.</label>
                     <input type="submit" value="Trouver une table">
