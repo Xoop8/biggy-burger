@@ -1,16 +1,3 @@
-<?php
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   
-    $nom = htmlspecialchars($_POST["Nom"]);
-    $date = htmlspecialchars($_POST["date"]);
-    $people = htmlspecialchars($_POST["people"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $time = htmlspecialchars($_POST["time"]);
-}
-?>
-
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -18,13 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BiggyBurger</title>
-    <script src="./main.js"></script>
+    <script src="./asset/static/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    
-
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/static/style.css">
 </head>
 <body>
     <header>
@@ -148,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </div>
                 <div class="right">
-                    <img src="asset/img/group4_img.jpg" alt="Burger Presentation">
+                    <img src="asset/img/group4_img.jpg" alt="Burger de Presentation">
                 </div>
             </div>
         </div>

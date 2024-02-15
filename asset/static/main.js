@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     prevButton.addEventListener('click', prevSlide);
     nextButton.addEventListener('click', nextSlide);
 
-    // Affichez la première diapositive au chargement de la page
+    
     showSlide(currentIndex);
 });
 
