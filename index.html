@@ -91,7 +91,7 @@
         <div class="wrap1">
             <div class="intro">
                 <h2>choisissez et Kiffer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consectetur deserunt, eligendi id ipsam itaque numquam optio provident quia quisquam.</p>
+                <p>Plongez dans une explosion de saveurs avec nos burgers qui marient parfaitement des ingrédients frais et des sauces maison. Kiffez chaque bouchée!.</p>
             </div>
             <article class="container">
                 <figure class="burger_1">
@@ -142,7 +142,7 @@
     <section id="reservation">
         <div class="wrap4">
             <h2>Reservation</h2>
-            <form  method="post" onsubmit="return validateForm()">
+            <form  method="get" onsubmit="return validateForm()">
                 <div class="left">
                     <input type="text" name="Nom" id="name" placeholder="NOM" required>
                     <input type="date" name="date" id="date" required>
@@ -217,5 +217,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    
+    var today = new Date();
+    
+    
+    var day = today.getDate();
+    var month = today.getMonth() +1; 
+    var year = today.getFullYear();
+    
+    
+    var formattedDate = year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+    
+    
+    var dateInput = document.getElementById('date');
+    
+    dateInput.setAttribute('min', formattedDate);
+</script>
 </body>
 </html>
