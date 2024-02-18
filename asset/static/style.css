@@ -1,6 +1,6 @@
 :root {
     --orange: #BD550A;
-    --rouge: #F95358;
+    --rouge: #F9676C;
     --brown: #44210E;
 }
 * {
@@ -103,7 +103,7 @@ header .a_la_une .a_la_une__left h2:first-child {
     width: 70%;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    color: var(--brown);
+    
     padding: .5rem;
     border: 2px dashed var(--brown);
 }
@@ -350,18 +350,23 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
 }
 #choose_enjoy .container p {
     margin-top: 1rem;
+    
 }
 /* Burger 1 */
 #choose_enjoy .container .burger_1 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--brown);
 }
 /* Burger 2 */
 #choose_enjoy .container .burger_2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--brown);
 }
 /* Burger 3 */
 #choose_enjoy .container .burger_3 {
@@ -369,6 +374,8 @@ header .a_la_une .a_la_une__right .picto_prix .picto__border .picto__only {
     flex-flow: column nowrap;
     align-items: center;
     align-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--brown);
    
 }
 
@@ -907,7 +914,7 @@ footer .bottom_container .right li a img:hover {
     }
 
     #try_today .left .bloc_1 .h2_bloc_1 h2:last-child, #try_today .right .bloc_2 .h2_bloc_2 h2, #try_today .right .bloc_3 .h2_bloc_3 h2:last-child {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     #discover .bloc_1 .left h2:nth-child(2) {
